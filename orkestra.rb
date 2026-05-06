@@ -11,7 +11,7 @@ class Orkestra < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.1.0/orkestra_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d019f077d1906de96fa440f6cf43a226522c716c861b5f3b5cc1f5519662d264"
+      sha256 "493c3d8579290b756df90cd0c6e9222aa02406afbd5d03aaa51d51a747d238c2"
 
       define_method(:install) do
         bin.install "orkestra"
@@ -19,7 +19,7 @@ class Orkestra < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.1.0/orkestra_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f51cdec0e8e5246f44e6404c5ee7b5a8a2a64bd7365a41b6f4974c557d8e7d02"
+      sha256 "228241b2750a893fb6a14042249f489708231ad6e47145ff04167f12cba244cb"
 
       define_method(:install) do
         bin.install "orkestra"
@@ -30,14 +30,14 @@ class Orkestra < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.1.0/orkestra_0.1.0_linux_amd64.tar.gz"
-      sha256 "c6e1e4825212493e7b246e4644a06e7eeb0c65a344d757677b167dd9ecfd5cac"
+      sha256 "e80f98822d035a52c6c391e57121540d62fc7cdb77826782ae9a0824ac373139"
       define_method(:install) do
         bin.install "orkestra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.1.0/orkestra_0.1.0_linux_arm64.tar.gz"
-      sha256 "7148143f1e85f8afa0f5013d6a454e26a3e120a76aea8d66265b6a468d0802b3"
+      sha256 "eef119f15b0088a5fa2dc73f030917971932018622941fb2951cb178d95073e6"
       define_method(:install) do
         bin.install "orkestra"
       end
