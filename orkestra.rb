@@ -5,21 +5,21 @@
 class Orkestra < Formula
   desc "Deterministic workflow orchestration engine - run complex workflows from YAML, locally or in CI."
   homepage "https://github.com/dszczyt/orkestra-releases"
-  version "0.2.0-alpha.4"
+  version "0.2.0-alpha.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.4/orkestra_0.2.0-alpha.4_darwin_amd64.tar.gz"
-      sha256 "99c6b7a5dfe9a0ff68d4c24a404cbe2911c09fadca3b2d96c1be67b7319a7c37"
+      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.5/orkestra_0.2.0-alpha.5_darwin_amd64.tar.gz"
+      sha256 "a72dc64e4ede4d0147999e5ac3518faf8c68af6ccbfdf87b53f2fe3dad99bf10"
 
       define_method(:install) do
         bin.install "orkestra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.4/orkestra_0.2.0-alpha.4_darwin_arm64.tar.gz"
-      sha256 "262b65dd8e77a19c55f098187562b742231169994ea9d9cfd604d44e3889181f"
+      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.5/orkestra_0.2.0-alpha.5_darwin_arm64.tar.gz"
+      sha256 "e6367ae9b580eae37222ce488043565f27d98acf743845fbdb8bb8d334cb27ca"
 
       define_method(:install) do
         bin.install "orkestra"
@@ -29,15 +29,15 @@ class Orkestra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.4/orkestra_0.2.0-alpha.4_linux_amd64.tar.gz"
-      sha256 "16c339c50d8c6b03efd3faf244c8fa647b2e02a60a9d74de0fd0f66de096a4b8"
+      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.5/orkestra_0.2.0-alpha.5_linux_amd64.tar.gz"
+      sha256 "beb46003737681f9b3df4e68703bdabd449a1e503de46f82621db309446bc618"
       define_method(:install) do
         bin.install "orkestra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.4/orkestra_0.2.0-alpha.4_linux_arm64.tar.gz"
-      sha256 "c51121e84e983803eace4e52fd911347f56734207c50692b5ae684da9647b867"
+      url "https://github.com/dszczyt/orkestra-releases/releases/download/v0.2.0-alpha.5/orkestra_0.2.0-alpha.5_linux_arm64.tar.gz"
+      sha256 "c85aa7e637651b6650375ec99e5583b595127a1464cbdf05c62c032ee6974720"
       define_method(:install) do
         bin.install "orkestra"
       end
